@@ -11,22 +11,22 @@ namespace Ejemplo3_19795333
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
-		}
+            
+        }
 
         protected void btnConfirm_Click(object sender, EventArgs e)
         {
-           Session ["ddlCategory"] = ddlCategory.SelectedValue;
-          Session["ddlSupplier"] =ddlSupplier.SelectedValue  ;
-           Session["txtProduct"] =txtProduct.Text;
-           Session["txtDescripcion"] = txtDescripcion.Text;
-           Session["txtImagen"] = txtImagen.Text;
-            Session["decPrice"] = txtPrice.Text;
+            Session["ddlCategory"] = ddlCategory.SelectedValue;
+            Session["ddlSupplier"] = ddlSupplier.SelectedValue;
+            Session["txtProduct"] = txtProduct.Text;
+            Session["txtDescripcion"] = txtDescripcion.Text;
+            Session["txtImagen"] = txtImagen.Text;
+            Session["txtPrice"] = txtPrice.Text;
             Session["txtNumberInStock"] = txtNumberInStock.Text;
             Session["txtNumberOnOrder"] = txtNumberOnOrder.Text;
             Session["txtReorderLevel"] = txtReorderLevel.Text;
 
-            Response.Redirect("Cookie_Session.aspx");
+            Response.Redirect("Cookies_Session.aspx");
         }
     }
 }
